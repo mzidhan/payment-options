@@ -11,9 +11,6 @@ func NewPaymentRepo() PaymentRepository {
 }
 
 func (r *paymentRepo) CallOVO() models.PaymentMethod {
-	//time.Sleep(2 * time.Second) // Simulate network delay
-
-	// simulate response from OVO API
 	return models.PaymentMethod{
 		Account: "6288xx",
 		Status:  "Active",
